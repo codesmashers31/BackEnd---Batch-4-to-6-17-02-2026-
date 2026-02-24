@@ -1,12 +1,51 @@
-const add = ()=>{
-  const a = 10
+// let a = 10
 
-  const sub = ()=>{
 
-    console.log(a);
-    
+// const add = () =>{
+
+//    console.log('inside',a);
+
+//    console.log('inside',a+1);
+   
+   
+
+// }
+
+// a = 12
+
+
+// console.log('Outer',a);
+
+// add()
+
+
+
+
+
+const outer = ()=>{
+
+  let count = 0;
+
+  return ()=>{
+ 
+    // count = count + 1 = 1+1 = 2
+    count++
+
+    return count
 
   }
 
 
 }
+
+
+const data = outer()
+
+
+console.log(data());
+console.log(data());
+console.log(data());
+
+count = 12
+
+console.log(count);
