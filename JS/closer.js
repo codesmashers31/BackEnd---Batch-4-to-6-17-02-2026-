@@ -46,6 +46,8 @@ console.log(data());
 console.log(data());
 console.log(data());
 
-count = 12
+console.log(count);
+
+window.count = 12
 
 console.log(count);
