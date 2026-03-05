@@ -1,9 +1,10 @@
 
 import './App.css'
-import HomePage from './pages/HomePage'
+import Data from './components/Data'
+// import HomePage from './pages/HomePage'
 const App = () => {
   return (
-    <HomePage/>
+   <Data/>
   )
 }
 
