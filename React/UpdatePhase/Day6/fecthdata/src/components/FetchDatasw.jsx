@@ -13,7 +13,7 @@ const FetchDatasw = () => {
     const fetchDataNew =await fetch("https://dummyjson.com/users")
     //console.log(fetchDataNew);
     const res =await fetchDataNew.json()
-    console.log(res.users);
+    console.log(res.users);       
     setData(res.users)
     
   } catch (error) {

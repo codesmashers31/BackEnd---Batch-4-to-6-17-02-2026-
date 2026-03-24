@@ -114,65 +114,65 @@ import { useState } from "react"
 
 
 
-// const App = () => {
+const App = () => {
 
-// const [formData,setFromData] = useState({username:"",age:""})
-// const [showData,setShowData] = useState({})
-// const [error,setError] = useState(null)
-//   const handleChange = (e)=>{
+const [formData,setFromData] = useState({username:"",age:""})
+const [showData,setShowData] = useState({})
+const [error,setError] = useState(null)
+  const handleChange = (e)=>{
 
      
-//     const inputname = e.target.name
-//     const inputvalue = e.target.value
+    const inputname = e.target.name           
+    const inputvalue = e.target.value
 
-//   //  console.log(inputname,inputvalue);
+  //  console.log(inputname,inputvalue);
    
-// //  const datasave = {...formData, [inputname]:inputvalue}
-//   // console.log(datasave);
+//  const datasave = {...formData, [inputname]:inputvalue}
+  // console.log(datasave);
   
-// setFromData({...formData, [inputname]:inputvalue})
+setFromData({...formData, [inputname]:inputvalue})
 
-//   }
+  }
 
 
-//   const handleSubmit = (e)=>{
+  const handleSubmit = (e)=>{
 
-//    //console.log(e);
+   //console.log(e);
 
-//    e.preventDefault()
+   e.preventDefault()
    
  
-// //console.log(formData);
+//console.log(formData);
 
-// if(!formData.username || formData.age){
-//   return setError("Need To fill the Name")
-// }
+if(!formData.username || formData.age){
+  return setError("Need To fill the Name")
+}
 
-// if(formData.username || !formData.age){
-//   return setError("Need To fill the Age")
-// }
+if(formData.username || !formData.age){
+  return setError("Need To fill the Age")
+}
 
-// setShowData(formData)
+setShowData(formData)
 
 
 
-//   }
+  }
 
-//   return (
-//     <>
-//     <form onSubmit={handleSubmit}>
-//       <input type="text" name="username" onChange={handleChange}  />
-//       <p style={{color:"red"}}>{error}</p>
-//       <input type="number" name="age" onChange={handleChange}  />
-//        <p style={{color:"red"}}>{error}</p>
-//       <input type="submit"  />
-//     </form>
+  return (
+    <>
+    <form onSubmit={handleSubmit}>
+      <input type="text" name="username" onChange={handleChange}  />
+      <p style={{color:"red"}}>{error}</p>
+      <input type="number" name="age" onChange={handleChange}  />
+       <p style={{color:"red"}}>{error}</p>
+      <input type="submit"  />
+    </form>
 
-//     <h1>{showData.username}</h1>
-//     <h1>{showData.age}</h1>
+    <h1>{showData.username}</h1>
+    <h1>{showData.age}</h1>
     
-//     </>
-//   )
-// }
+    </>
+  )
+}
 
-// export default App
+export default App
